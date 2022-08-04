@@ -32,7 +32,8 @@ class Solution:
 
 ![image](https://user-images.githubusercontent.com/104201605/182763445-d8acf8e9-d2f9-470e-94fe-0f8a594f9a08.png)
 
-![image](https://user-images.githubusercontent.com/104201605/182763478-4517130f-ff13-4ea8-9e3d-f4c044222d2b.png)
+![无标题](https://user-images.githubusercontent.com/104201605/182764496-e89a2907-c7e6-4a8d-bdbf-f7e56ec2a24a.png)
+
 在递归的过程中，如何算是递归结束了呢，当然是当前遍历的节点是空了，那么本层递归就要要结束了，所以如果当前遍历的这个节点是空，就直接return。而如果当前已经为空，还去找左右孩子，会报错。
 
 比如上图，如果是`root.left == None and root.right == None`的判断条件，1的左孩子为空但右孩子非空，则递归到`traversal(root.left)` ，就会发现此时左孩子已空，还找左右孩子就会报错。
